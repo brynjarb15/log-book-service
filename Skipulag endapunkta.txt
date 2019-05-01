@@ -1,0 +1,34 @@
+persons
+	GET - all persons
+	DELETE - delete times on all persons // Rethink this one
+	
+persons/{personId}
+	GET - get person with id
+	PUT - used to update times
+	
+// Rethink this one
+persons/csv
+	GET - csv for all persons
+
+events
+	GET - all events
+	
+events/{eventId}
+	GET - get event with Id
+	
+	
+events/{eventId}/persons
+	GET - get all persons in event
+	POST - Add person to event
+	
+periods
+	GET - all periods
+	POST - new period
+	
+periods/{periodId}
+	GET - Get period with Id
+	
+periods/{periodId}/events
+	GET - get all events in period
+	POST - add event to period
+	
