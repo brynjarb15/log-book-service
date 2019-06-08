@@ -9,7 +9,10 @@ const flightTimesSchema = new Schema({
 	offBlock: String,
 	onBlock: String,
 	takeOff: String,
-	landing: String
+	landing: String,
+	blockTime: Number,
+	flightTime: Number,
+	numberOfLandings: Number
 });
 
 const logBookSchema = new Schema({	

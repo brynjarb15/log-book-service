@@ -82,7 +82,10 @@ const api = db => {
 			offBlock: req.body.offBlock ? req.body.offBlock : '00:00',
 			takeOff: req.body.takeOff ? req.body.takeOff : '00:00',
 			landing: req.body.landing ? req.body.landing : '00:00',
-			onBlock: req.body.onBlock ? req.body.onBlock : '00:00'
+			onBlock: req.body.onBlock ? req.body.onBlock : '00:00',
+			blockTime: req.body.blockTime ? req.body.blockTime : 0,
+			flightTime: req.body.flightTime ? req.body.flightTime : 0,
+			numberOfLandings: req.body.numberOfLandings ? req.body.numberOfLandings : 0
 		};
 		new FlightTimes(newLog).save(err => {
 			if (err) {
